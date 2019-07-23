@@ -1,4 +1,4 @@
-![](ds_skills_300dpi.png)
+![](ds_for_research.png)
 
 Copyright Jonah Duckles - 2019 
 Licensed as [CC-BY](https://creativecommons.org/licenses/by/4.0/)
