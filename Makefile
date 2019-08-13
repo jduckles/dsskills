@@ -5,7 +5,7 @@ PDFS=$(patsubst %.svg, %.pdf, $(SVGS))
 all: $(PNGS) $(PDFS)
 
 %.png: %.svg
-    ./minify	
+	./minify	
 	convert $< $@
 	convert -density 300 $< 300dpi_$@
 
