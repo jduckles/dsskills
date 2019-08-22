@@ -4,8 +4,12 @@ PDFS=$(patsubst %.svg, %.pdf, $(SVGS))
 
 all: $(PNGS) $(PDFS)
 
+dockerbuild:
+	docker build . -t jduckles/dsskills
+	docker push jduckles/dsskills
+
 %.png: %.svg
-	./minify	
+	svgo *.svg
 	convert $< $@
 	convert -density 300 $< 300dpi_$@
 
