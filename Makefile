@@ -9,11 +9,11 @@ dockerbuild:
 	docker push jduckles/dsskills
 
 %.png: %.svg
-	svgo *.svg
-	convert $< $@
-	convert -density 300 $< 300dpi_$@
+	docker run -v ${PWD}:/data jduckles/dsskills svgo *.svg
+	docker run -v ${PWD}:/data jduckles/dsskills convert $< $@
+	docker run -v ${PWD}:/data jduckles/dsskills convert -density 300 $< 300dpi_$@
 
 %.pdf: %.svg
-	inkscape ${PWD}/$< --export-pdf ${PWD}/$@
+	docker run -v ${PWD}:/data jduckles/dsskills inkscape /data/$< --export-pdf /data/$@
 clean:
 	rm *.pdf *.png
