@@ -5,8 +5,8 @@ Licensed as [CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 Please suggest improvements by submitting a [GitHub Issue](https://github.com/jduckles/dsskills/issues) 
 
-**Amadine** - Layout done with [Amadine](https://amadine.com/) a $20 alternative to Adobe Illustrator
-**icons** - from [Noun Project](https://thenounproject.com/) Pro membership
+- **Vector layout** - Layout done with [Amadine](https://amadine.com/) a $20 alternative to Adobe Illustrator
+- **icons** - from [Noun Project](https://thenounproject.com/) Pro membership
 
 # Makefile dependencies 
 
